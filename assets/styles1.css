@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --cor-primeira: #000000;
+    --cor-segunda: #ffffff;
+    --cor-terceira: #86b0f6;
+    --cor-quarta:#0a0e29;
+    --cor-quinta: #F9922A;
+
+    --fonte-princial:'Noticia Text';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+  }
+
+.cabecalho {
+    padding: 0% 0% 0% 5%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__imagem__logo {
+    padding: 0% 0% 0% 0%;
+    max-width:7rem;
+    max-height:5rem;
+}
+
+.cabecalho__localizacao {
+    width: 100%;
+    max-width: 430px;
+}
+
+.cabecalho__localizacao form {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    padding-right: 16px;
+}
+
+.cabecalho__localizacao input {
+    border: 0;
+    outline: none;
+    flex: 1;
+    padding: 0 110px;
+    font-size: 16px;
+}
+
+.cabecalho__localizacao input::placeholder {
+    color: #000;
+}
+
+.cabecalho__localizacao button {
+    border: 0;
+    background: none;
+    padding: 0;
+}
+
+.cabecalho__localizacao button:hover {
+    cursor: pointer;
+}
+
+.cabecalho__menu{
+    display: flex;/*inciando o flexbox*/
+    align-items: center;
+    gap: 15px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-princial);
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--cor-terciara);
+    text-decoration: none; /*retirar sublinhado*/
+}
+
+.cabecalho__menu__link__botao {
+    font-family:var(--fonte-princial);
+    background-color: var(--cor-quinta);
+    border-radius: 20px;
+    border-color: #F9922A;
+    text-decoration: none;
+    color: var(--cor-segunda);
+    padding: 10px 20px; 
+}
+
+main {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-family: var(--fonte-princial);
+    color: var(--cor-terceira);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 60;
+    margin: 20px;
+}
+
+
+footer {
+	background-color: #86B0F6; /*cor fundo*/
+    position:relative;
+    padding: 20px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    color: #000000; 
+}
+
+.rodape a {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none; /*retirar linha do link*/
+    color: #000000;
+    font-weight: bold;
+}
+

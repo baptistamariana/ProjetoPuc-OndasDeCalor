@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Fica Frio</title>
+  <link rel="stylesheet" href="assets/pagina-login.css">
+</head>
+
+</head>
+
+</head>
+
+<body>
+
+  <header class="cabecalho">   
+
+    <img src="imagens/logo.png" alt="Logo" class="cabecalho__imagem__logo">
+
+
+    <nav class="cabecalho__localizacao">
+        <form id="search">
+            <input placeholder="Insira a sua localização" 
+                   type="search"
+                   name="city_name"
+                   id="pesquisar">
+            <button type="submit">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="#DBB13B"/>
+                        </svg>                        
+            </button>
+         </form>
+    </nav>
+
+    <nav class="cabecalho__menu">
+        <a class="cabecalho__menu__link" href="pagina-pontos-agua.html">Pontos cadastrados</a>
+        <a class="cabecalho__menu__link" href="pontos-de-apoio.html">Apoio</a>
+        <a class="cabecalho__menu__link" href="pagina-login.html">Login</a>
+        <a class="cabecalho__menu__link" href="pagina-quem-somos.html">Quem somos</a>
+        <a class="cabecalho__menu__link__botao" href="index1.html">Localize um ponto</a>
+    </nav>
+
+</header>
+
+
+  <main>
+    <section class="login-section">
+      <div class="login-container">
+        <h2>Bem-vindo de volta!</h2>
+        
+        <div id="msgError"></div>
+
+        <div class="label-float">
+        <label id="userLabel" for="usuario">Usuário</label>
+        <input type="text" id="usuario" placeholder="Digite seu usuário..." required>
+        </div>
+
+        <div class="label-float">
+          <label id="senhaLabel" for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Digite sua senha..." required>
+          <i class="fa fa-eye" id="text"></i>
+        </div>
+
+        <button onclick="entrar()" id="entrar">Entrar</a></button>
+      </div>
+      
+      <div class="registro-container">
+        <h2>Não tem uma conta?</h2>
+        <p><a href="">Cadastre-se agora mesmo!</a></p>
+      </div>
+    </section>  
+  </main>
+  
+<footer>
+    <div class="rodape">
+    <p class="rodape__endereco">R. Dom José Gaspar, 500, Coração Eucarístico, Belo Horizonte, MG</p>
+    <a href="#"><p class="rodape__faqs">FAQs</p></a>
+    <a href="#"><p class="rodape__fale__conosco">Fale Conosco</p></a>
+   </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

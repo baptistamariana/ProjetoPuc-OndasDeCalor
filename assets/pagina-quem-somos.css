@@ -1,0 +1,138 @@
+body, h1, h2, p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 12px;
+    margin: 0 40px;
+    border-bottom: 2px solid #6F92CC;
+}
+
+.search {
+    width: 100%;
+    max-width: 430px;
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    padding-right: 16px;
+}
+
+.search input {
+    border: 0;
+    outline: none;
+    flex: 1;
+    padding: 0 16px;
+    font-size: 16px;
+}
+
+.search input::placeholder {
+    color: #000;
+}
+
+.search button {
+    border: 0;
+    background: none;
+    padding: 0;
+}
+
+.search button:hover {
+    cursor: pointer;
+}
+
+.menu nav {
+    font-size: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.menu nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.menu .pagina-maps {
+    border-radius: 30px;
+    background: #DBB13B;
+    padding: 12px 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.main-content {
+    margin: 0 40px;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .column-left {
+    width: 40%;
+}
+
+.main-content .column-left img {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.main-content .column-left .share {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content .column-right {
+    width: 50%;
+    text-align: center;
+}
+
+.main-content .column-right h1 {
+    margin: 0 0 8px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.main-content .column-right h2 {
+    margin: 0 0 8px;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.footer {
+    padding: 60px 40px;
+    color: white;
+    display: flex;
+    background-color: #86B0F6;
+    gap: 40px;
+}
+
+.footer .address {
+    flex: 1;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 150px;
+}
+
+.footer-menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about-us .main-content h1 {
+    margin-bottom: 40px;
+}
+
+.about-us .main-content p {
+    font-size: 20px;
+}

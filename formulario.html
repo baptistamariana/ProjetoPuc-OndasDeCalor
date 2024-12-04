@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulário de Registro - Fica Frio</title>
+</head>
+<body>
+    
+    <header class="cabecalho">   
+
+        <img src="imagens/logo.png" alt="Logo" class="cabecalho__imagem__logo">
+    
+    
+        <nav class="cabecalho__localizacao">
+            <form id="search">
+                <input placeholder="Insira a sua localização" 
+                       type="search"
+                       name="city_name"
+                       id="pesquisar">
+                <button type="submit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="#DBB13B"/>
+                            </svg>                        
+                </button>
+             </form>
+        </nav>
+    
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="pagina-pontos-agua.html">Pontos cadastrados</a>
+            <a class="cabecalho__menu__link" href="pontos-de-apoio.html">Apoio</a>
+            <a class="cabecalho__menu__link" href="pagina-login.html">Login</a>
+            <a class="cabecalho__menu__link" href="pagina-quem-somos.html">Quem somos</a>
+            <a class="cabecalho__menu__link__botao" href="index1.html">Localize um ponto</a>
+        </nav>
+    
+    </header>
+
+    <main>
+        <h1>Formulário de Registro de Novo Ponto de Água</h1>
+        <form id="water-point-form" class="form-container">
+            <div class="form-group">
+                <h2>Nome do Ponto de Água:<br>(preencha os campos abaixo)</h2>
+                <input type="text" placeholder="Rua:" name="rua" required>
+                <input type="text" placeholder="Número:" name="numero" required>
+                <input type="text" placeholder="Bairro:" name="bairro" required>
+                <input type="text" placeholder="Cidade:" name="cidade" required>
+            </div>
+            <div class="form-group">
+                <h2>Tipo de Ponto de Água:<br>(selecione abaixo)</h2>
+                <button type="button" class="btn-select" data-type="tipo">Bebedouro</button>
+                <button type="button" class="btn-select" data-type="tipo">Fonte</button>
+            </div>
+            <div class="form-group">
+                <h2>Qualidade da Água:<br>(selecione abaixo)</h2>
+                <button type="button" class="btn-select" data-type="qualidade">Potável</button>
+                <button type="button" class="btn-select" data-type="qualidade">Não Potável</button>
+                <button type="button" class="btn-select" data-type="qualidade">Em Análise</button>
+            </div>
+    
+            <div class="comments-section">
+                <h3>Comentários Adicionais</h3>
+                <textarea placeholder="Insira seu comentário aqui..." name="comentarios"></textarea>
+            </div>
+    
+            <div class="upload-section">
+                <h3>Anexar Imagens:</h3>
+                <button type="button" class="btn-upload">⬆️</button>
+            </div>
+    
+            <div class="form-footer">
+                <div class="form-group">
+                    <h3>Responsável pelo Registro:</h3>
+                    <input type="text" placeholder="Nome do responsável" name="responsavel" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="reset" class="btn-reset">LIMPAR FORMULÁRIO</button>
+                    <button type="submit" class="btn-submit">ENVIAR FORMULÁRIO</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    
+
+    <footer>
+        <div class="rodape">
+        <p class="rodape__endereco">R. Dom José Gaspar, 500, Coração Eucarístico, Belo Horizonte, MG</p>
+        <a href="#"><p class="rodape__faqs">FAQs</p></a>
+        <a href="#"><p class="rodape__fale__conosco">Fale Conosco</p></a>
+       </div>
+      </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

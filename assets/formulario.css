@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+:root {
+    --cor-primeira: #000000;
+    --cor-segunda: #ffffff;
+    --cor-terceira: #86b0f6;
+    --cor-quarta:#0a0e29;
+    --cor-quinta: #F9922A;
+
+    --fonte-princial:'Noticia Text';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.form-group {
+    text-align: left;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
+
+.btn-select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comments-section {
+    margin: 20px;
+}
+
+.comments-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 70%;
+    height: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.upload-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.upload-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.btn-upload {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-reset, .btn-submit {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-reset {
+    background-color: #91b9f0;
+    color: white;
+}
+
+.btn-submit {
+    background-color: #91b9f0;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #91b9f0;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.address {
+    font-size: 14px;
+    color: #666;
+}
+
+.cabecalho {
+    padding: 0% 0% 0% 5%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__imagem__logo {
+    padding: 0% 0% 0% 0%;
+    max-width:7rem;
+    max-height:5rem;
+}
+
+.cabecalho__localizacao {
+    width: 100%;
+    max-width: 430px;
+}
+
+.cabecalho__localizacao form {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    padding-right: 16px;
+}
+
+.cabecalho__localizacao input {
+    border: 0;
+    outline: none;
+    flex: 1;
+    padding: 0 110px;
+    font-size: 16px;
+}
+
+.cabecalho__localizacao input::placeholder {
+    color: #000;
+}
+
+.cabecalho__localizacao button {
+    border: 0;
+    background: none;
+    padding: 0;
+}
+
+.cabecalho__localizacao button:hover {
+    cursor: pointer;
+}
+.cabecalho__menu{
+    display: flex;/*inciando o flexbox*/
+    align-items: center;
+    gap: 15px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-princial);
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--cor-terciara);
+    text-decoration: none; /*retirar sublinhado*/
+}
+
+.cabecalho__menu__link__botao {
+    font-family:var(--fonte-princial);
+    background-color: var(--cor-quinta);
+    border-radius: 20px;
+    border-color: #F9922A;
+    text-decoration: none;
+    color: var(--cor-segunda);
+    padding: 10px 20px; 
+}
+
+footer {
+	background-color: #86B0F6; /*cor fundo*/
+    position:relative;
+    padding: 20px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    color: #000000; 
+}
+
+.rodape a {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none; /*retirar linha do link*/
+    color: #000000;
+    font-weight: bold;
+}
